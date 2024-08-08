@@ -1,0 +1,26 @@
+@use "../base/screen";
+
+section {
+  padding: var(--gap-xl) var(--gap-m);
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-m);
+}
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: var(--size-xxl);
+}
+
+@include screen.s {
+  section {
+    padding: var(--gap-xl) var(--gap-xs);
+  }
+}

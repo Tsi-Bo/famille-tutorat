@@ -1,0 +1,43 @@
+@use "../base/screen";
+
+.team-member img {
+  width: 100%;
+  border-top-left-radius: var(--border);
+  border-top-right-radius: var(--border);
+  max-height: var(--size-m);
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.team-member__text {
+  padding: var(--pad-l) var(--pad-xxl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-s);
+}
+
+.team-member__text hr {
+  width: 100%;
+}
+
+.team-member li {
+  line-height: var(--pad-l);
+}
+
+.team-member h3 {
+  margin-bottom: 0;
+}
+
+.team-member__text--title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@include screen.s {
+  .team-member img {
+    object-position: center 20%;
+  }
+}

@@ -1,0 +1,36 @@
+@use "../base/screen";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  max-width: var(--size-l);
+  width: 80%;
+  border-radius: var(--border);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.container p {
+  text-align: center;
+  color: var(--color-grey);
+  font-size: var(--fs-s);
+}
+
+.container button,
+.container li {
+  font-size: var(--fs-s);
+}
+
+.container__btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@include screen.s {
+  .container {
+    max-width: none;
+    width: 100%;
+  }
+}

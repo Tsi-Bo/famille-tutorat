@@ -1,0 +1,25 @@
+.specialite__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap-s);
+}
+.specialite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--pad-m) var(--pad-s);
+  border-radius: 18px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  background-color: white;
+  gap: var(--gap-s);
+  font-size: var(--fs-m);
+}
+
+.specialite:hover {
+  transform: translateY(-5px);
+}
+
+.specialite__text {
+  font-size: var(--fs-m);
+}

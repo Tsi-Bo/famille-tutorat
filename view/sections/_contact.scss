@@ -1,0 +1,57 @@
+@use "../base/screen";
+
+.contact {
+  background-color: white;
+  border-radius: var(--border);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  padding: var(--pad-l) var(--pad-xxl);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-s);
+  margin-bottom: var(--gap-l);
+}
+.contact h2 {
+  margin-bottom: 0;
+}
+
+.contact a {
+  transition: all 0.2s;
+}
+
+.contact a:hover {
+  color: var(--color-red);
+}
+
+.contact p,
+.contact h3 {
+  width: 80%;
+  margin-bottom: var(--gap-xs);
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-m);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-m);
+}
+
+.contact img {
+  width: 40%;
+}
+
+@include screen.s {
+  .contact__container {
+    flex-direction: column-reverse;
+  }
+  .contact img {
+    width: 80%;
+  }
+}

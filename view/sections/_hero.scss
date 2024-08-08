@@ -1,0 +1,50 @@
+@use "../base/screen";
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap-m);
+}
+
+.hero h1 {
+  text-wrap: nowrap;
+}
+
+.hero img {
+  width: 30%;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  gap: var(--gap-m);
+}
+
+.hero__btns {
+  display: flex;
+  gap: var(--gap-s);
+}
+
+@include screen.s {
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero img {
+    width: 80%;
+  }
+
+  .hero__btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__text {
+    width: 100%;
+    gap: var(--gap-s);
+  }
+}

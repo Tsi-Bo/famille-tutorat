@@ -1,0 +1,29 @@
+@use "./variables";
+
+h1,
+h2 {
+  font-family: "Arial Black", Arial, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--gap-l);
+}
+
+h2 {
+  font-size: var(--fs-l);
+  margin-bottom: var(--gap-m);
+}
+
+h3 {
+  font-weight: bold;
+  font-size: var(--fs-m);
+  margin-bottom: var(--gap-m);
+}
+
+p {
+  margin-bottom: none;
+  letter-spacing: 1px;
+  font-size: var(--fs-m);
+}

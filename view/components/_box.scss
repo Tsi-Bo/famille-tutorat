@@ -1,0 +1,16 @@
+@use "../base/screen";
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-s);
+  margin: 0 auto;
+}
+
+@include screen.s {
+  .box {
+    flex-direction: column;
+    margin: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,65 @@
+@use "../base/screen";
+
+.faq__link {
+  text-decoration: underline;
+  color: var(--color-red);
+}
+
+.faq {
+  background-color: white;
+  padding: var(--gap-xl) var(--gap-m);
+  border-radius: var(--border);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  margin: var(--gap-m) 0;
+}
+
+.faq a {
+  text-decoration: underline;
+  color: var(--color-red);
+}
+
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: var(--gap-s);
+  max-width: var(--size-xxl);
+}
+
+.faq__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.faq__title img {
+  width: 50%;
+}
+
+.faq__item {
+  margin-bottom: var(--gap-l);
+}
+
+.faq__item h3 {
+  font-size: var(--fs-m);
+  font-weight: bold;
+  margin-bottom: var(--gap-s);
+}
+
+.faq__item p {
+  font-size: var(--fs-s);
+  color: var(--color-grey);
+  margin-top: var(--gap-xs);
+}
+
+@include screen.s {
+  .faq__title {
+    flex-direction: column;
+  }
+  .faq__title img {
+    width: 80%;
+  }
+}

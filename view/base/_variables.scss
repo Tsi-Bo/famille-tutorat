@@ -1,0 +1,61 @@
+@use "./screen";
+
+:root {
+  --color-white: #f8f9ff;
+  --color-red: #eb455f;
+  --color-red-trans: #eb455e2c;
+  --color-black: #2d2d2d;
+  --color-yellow: #f8d57e;
+  --color-grey: #818181;
+
+  /* PADDING / MARGIN */
+  --gap-xs: 12px;
+  --gap-s: 22px;
+  --gap-m: 50px;
+  --gap-l: 60px;
+  --gap-xl: 120px;
+
+  /* SMALL SIZES */
+
+  --pad-xs: 4px;
+  --pad-s: 16px;
+  --pad-m: 22px;
+  --pad-l: 36px;
+  --pad-xl: 48px;
+  --pad-xxl: 58px;
+
+  /* SIZES */
+  --size-s: 228px;
+  --size-m: 260px;
+  --size-l: 360px;
+  --size-xl: 500px;
+  --size-xxl: 800px;
+
+  /* FONT SIZES */
+  --fs-xs: 16px;
+  --fs-s: 18px;
+  --fs-m: 21px;
+  --fs-l: 38px;
+  --fs-xl: 68px;
+
+  // EXTRA
+  --border: 32px;
+  --icons: 50px;
+}
+
+@include screen.s {
+  :root {
+    /* FONT SIZES */
+
+    --fs-xs: 10px;
+    --fs-m: 21px;
+    --fs-l: 32px;
+    --fs-xl: 38px;
+
+    /* PADDING / MARGIN */
+    --gap-s: 18px;
+    --gap-m: 40px;
+    --gap-l: 50px;
+    --gap-xl: 100px;
+  }
+}

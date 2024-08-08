@@ -1,0 +1,27 @@
+// BASE
+@use "./base/resets.scss";
+@use "./base/typography.scss";
+@use "./base/variables.scss";
+@use "./base/screen.scss";
+
+// COMPONENTS
+@use "./components/buttons";
+@use "./components/type-cours";
+@use "./components/container";
+@use "./components/team-member";
+@use "./components/box";
+@use "./components/specialite";
+@use "./components/feedback";
+@use "./components/section";
+@use "./components/contact-box";
+
+// SECTIONS
+@use "./sections/hero";
+@use "./sections/specials";
+@use "./sections/feedbacks";
+@use "./sections/contact";
+@use "./sections/faq";
+
+// LAYOUT
+@use "./layout/header";
+@use "./layout/footer";

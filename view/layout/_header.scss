@@ -1,0 +1,50 @@
+@use "../base/screen";
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gap-s) var(--gap-m);
+  width: 100%;
+}
+
+header a {
+  padding: none;
+  border: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: var(--icons);
+  width: var(--icons);
+}
+
+.logo a {
+  padding: var(--gap-s) var(--gap-xs);
+}
+
+.logo__text {
+  letter-spacing: -1px;
+  font-size: var(--fs-m);
+}
+
+.header__btns {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-s);
+  align-items: center;
+}
+@include screen.s {
+  .header__btns {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+}
