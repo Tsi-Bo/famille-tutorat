@@ -8,6 +8,8 @@ header a,
   border: 1px solid;
   transition: all 0.15s ease-in-out;
   font-size: var(--fs-m);
+  display: flex;
+  align-items: center;
 }
 
 // Button Full Color

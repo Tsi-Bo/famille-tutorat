@@ -41,6 +41,7 @@
   // EXTRA
   --border: 32px;
   --icons: 50px;
+  --stars: 50px;
 }
 
 @include screen.s {
@@ -57,5 +58,7 @@
     --gap-m: 40px;
     --gap-l: 50px;
     --gap-xl: 100px;
+
+    --stars: 26px;
   }
 }

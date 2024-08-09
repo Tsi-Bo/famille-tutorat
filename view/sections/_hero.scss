@@ -48,3 +48,13 @@
     gap: var(--gap-s);
   }
 }
+
+@include screen.xs {
+  .hero {
+    width: 100%;
+  }
+
+  .hero h1 {
+    text-wrap: wrap;
+  }
+}

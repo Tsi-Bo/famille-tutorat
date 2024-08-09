@@ -76,6 +76,7 @@ hr {
   --fs-xl: 68px;
   --border: 32px;
   --icons: 50px;
+  --stars: 50px;
 }
 
 @media only screen and (max-width:800px) {
@@ -90,6 +91,7 @@ hr {
     --gap-m: 40px;
     --gap-l: 50px;
     --gap-xl: 100px;
+    --stars: 26px;
   }
 }
 h1,
@@ -127,6 +129,8 @@ header a,
   border: 1px solid;
   transition: all 0.15s ease-in-out;
   font-size: var(--fs-m);
+  display: flex;
+  align-items: center;
 }
 
 .btn--full {
@@ -326,6 +330,13 @@ header a,
   font-size: var(--fs-m);
 }
 
+@media only screen and (max-width:480px) {
+  .specialite__box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--gap-s);
+  }
+}
 .feedback {
   gap: var(--gap-s);
   padding: var(--pad-l) var(--pad-xxl);
@@ -354,8 +365,8 @@ header a,
 }
 
 .stars img {
-  width: var(--icons);
-  height: var(--icons);
+  width: var(--stars);
+  height: var(--stars);
 }
 
 .feedback__text {
@@ -368,6 +379,11 @@ header a,
   margin: 0;
 }
 
+@media only screen and (max-width:800px) {
+  .feedback {
+    width: 80%;
+  }
+}
 section {
   padding: var(--gap-xl) var(--gap-m);
 }
@@ -437,6 +453,14 @@ section {
     gap: var(--gap-s);
   }
 }
+@media only screen and (max-width:480px) {
+  .hero {
+    width: 100%;
+  }
+  .hero h1 {
+    text-wrap: wrap;
+  }
+}
 .specials {
   display: flex;
   justify-content: space-between;
@@ -469,6 +493,7 @@ section {
 }
 .feedbacks {
   color: var(--color-white);
+  width: 100%;
 }
 
 .feedbacks__text h2,
@@ -529,6 +554,11 @@ section {
   }
   .contact img {
     width: 80%;
+  }
+}
+@media only screen and (max-width:480px) {
+  .contact {
+    width: 100%;
   }
 }
 .faq__link {

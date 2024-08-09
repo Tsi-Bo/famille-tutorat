@@ -1,3 +1,5 @@
+@use "../base/screen";
+
 .feedback {
   gap: var(--gap-s);
   padding: var(--pad-l) var(--pad-xxl);
@@ -25,8 +27,8 @@
 }
 
 .stars img {
-  width: var(--icons);
-  height: var(--icons);
+  width: var(--stars);
+  height: var(--stars);
 }
 
 .feedback__text {
@@ -37,4 +39,10 @@
 
 .feedback h3 {
   margin: 0;
+}
+
+@include screen.s {
+  .feedback {
+    width: 80%;
+  }
 }

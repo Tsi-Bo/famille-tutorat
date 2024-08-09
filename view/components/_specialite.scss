@@ -1,3 +1,4 @@
+@use "../base/screen";
 .specialite__box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -22,4 +23,12 @@
 
 .specialite__text {
   font-size: var(--fs-m);
+}
+
+@include screen.xs {
+  .specialite__box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--gap-s);
+  }
 }

@@ -55,3 +55,9 @@
     width: 80%;
   }
 }
+
+@include screen.xs {
+  .contact {
+    width: 100%;
+  }
+}
