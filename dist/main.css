@@ -76,7 +76,7 @@ hr {
   --fs-xl: 68px;
   --border: 32px;
   --icons: 50px;
-  --stars: 50px;
+  --stars: 36px;
 }
 
 @media only screen and (max-width:800px) {
