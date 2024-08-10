@@ -623,6 +623,35 @@ section {
     width: 80%;
   }
 }
+.tarifs {
+  background-color: white;
+  padding: var(--gap-xl) var(--gap-m);
+  border-radius: var(--border);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  margin: var(--gap-m) 0;
+}
+
+.tarifs__box {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: var(--pad-m) var(--pad-m);
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  background-color: white;
+  gap: var(--gap-m);
+  font-size: var(--fs-m);
+  margin: var(--gap-m) 0;
+}
+
+.tarifs h1 {
+  margin-bottom: var(--gap-xs);
+}
+
+.tarifs hr {
+  margin-bottom: var(--gap-m);
+}
+
 header {
   display: flex;
   flex-direction: row;
